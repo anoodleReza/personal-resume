@@ -1,7 +1,6 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
-  BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
   MapIcon,
@@ -9,10 +8,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -69,18 +65,19 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Reza Brilliansah.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Final Year <strong className="text-stone-100">Computer Science and Artificial Intelligence </strong>
+        student from The University of Birmingham and Universitas Gadjah Mada
+        looking for opportunities to blend <strong className="text-stone-100">Machine Learning and Software Development.</strong>
+        Actively looking for jobs as a <strong className="text-stone-100">Software Engineer</strong> or{' '} <strong className="text-stone-100">Data Scientist</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can looking for new recipes to <strong className="text-stone-100">cook</strong>,
+        catching some <strong className="text-stone-100">Pokemon</strong>, or exploring beautiful{' '}
+        <strong className="text-stone-100">cafes</strong>.
       </p>
     </>
   ),
@@ -104,16 +101,19 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `
+  Innovative software developer and machine learning enthusiast with experience 
+  in AI applications including speech recognition, computer vision, and generative voice technologies, 
+  passionate about implementing intelligent solutions that bridge the gap between 
+  cutting-edge AI and practical everyday challenges.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Birmingham, UK', Icon: MapIcon},
+    {label: 'Age', text: '22', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indonesia', Icon: FlagIcon},
+    {label: 'Interests', text: 'Pokemon, Cooking, Cafes', Icon: SparklesIcon},
+    {label: 'Study I', text: 'University of Birmingham', Icon: AcademicCapIcon},
+    {label: 'Study II', text: 'Universitas Gadjah Mada', Icon: AcademicCapIcon},
+
   ],
 };
 
@@ -129,17 +129,17 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Indonesian',
+        level: 8,
       },
       {
         name: 'Spanish',
-        level: 3,
+        level: 5,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Fullstack development',
     skills: [
       {
         name: 'React',
@@ -150,42 +150,42 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'Node.js',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'Machine Learning',
+    skills: [
+      {
+        name: 'Python',
+        level: 9,
+      },
+      {
+        name: 'Natural Language Processing',
+        level: 7,
+      },
+      {
+        name: 'Computer Vision',
         level: 6,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Transferable skills',
     skills: [
       {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
+        name: 'Problem-solving & Critical Thinking',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Project Management',
+        level: 8,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Analytical Reasoning',
+        level: 9,
       },
     ],
   },
@@ -336,27 +336,22 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Want to get in touch? I would love to hear from you. Send me a message and I will get back to you as soon as possible.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'reza.brilliansah77@gmail.com',
+      href: 'mailto:reza.brilliansah77@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Birmingham, UK',
+      href: 'https://maps.app.goo.gl/tMknfdTYdKwNfvUi9',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'anoodleReza ',
+      href: 'https://github.com/anoodleReza',
     },
   ],
 };
@@ -365,9 +360,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/anoodleReza'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/reza-brilliansah-b034031b4/'},
 ];
